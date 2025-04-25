@@ -1,9 +1,25 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-import '@/styles/globals.css'
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/common/Header.astro";
+import Container from "../components/common/Container.astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Welcome">
+	<Header />
+
+	<Container>
+		<ul class="flex flex-col gap-3 text-xl font-bold">
+			<li>
+				<h2>
+					<a href="/diamat">Диалектический материализм</a>
+				</h2>
+			</li>
+			<li>
+				<h2>
+					<a href="/istmat">Исторический материализм</a>
+				</h2>
+			</li>
+		</ul>
+
+	</Container>
 </Layout>

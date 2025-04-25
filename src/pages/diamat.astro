@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/common/Header.astro";
+import Container from "../components/common/Container.astro";
+---
+
+<Layout title="Diamat">
+    <Header />
+
+    <Container>
+        <h1 class="text-xl font-bold">Диалектический материализм</h1>
+
+        <ul class="flex flex-col gap-2 p-4">
+            <li>
+                <a href="/diamat/1">Что вообще происходит?</a>
+            </li>
+            <li>
+                <a href="/diamat/2">Сущность как есть</a>
+            </li>
+        </ul>
+    </Container>
+</Layout>
